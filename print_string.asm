@@ -2,9 +2,9 @@ print_string:
     push ax
     push bx
     .loop:
-        mov al, [bx]
-        cmp al, 0
-        je .end
+        mov al, [bx]           ; Here bx register acts like an offset
+        cmp al, 0              ; in the case of string operations and 
+        je .end                ; our ds register has already been set to 0
 
         mov ah, 0x0e
         int 0x10
