@@ -33,3 +33,5 @@ MSG_PM : db "Successfully landed in 32-bit protected mode", 0
 ; Padding and magic number
 times 510-($-$$) db 0
 dw 0xaa55
+
+; Just trying to keep the streak on ;)
