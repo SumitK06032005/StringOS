@@ -1,6 +1,6 @@
-# 🧩 StringOS Bootloader
+# 🧩 A Simple Bootloader
 
-**StringOS** is a simple bootloader written in x86 Assembly that runs in 16-bit real mode, prints text to the screen, then switches to 32-bit protected mode and prints again — forming the foundation of a tiny hobby operating system.
+A simple bootloader written in x86 Assembly that runs in 16-bit real mode, prints text to the screen, then switches to 32-bit protected mode and prints again — forming the foundation of a tiny hobby operating system.
 
 This project is my first step into OS development (OSDev) and low-level programming.  
 It focuses on understanding how the CPU boots, how to print characters without BIOS interrupts, and how to transition safely to protected mode.
@@ -48,3 +48,4 @@ To build and run StringOS, you’ll need:
 ### Option 1: Manual build
 -nasm -f bin src/32-bitPM.asm -o bootloader.bin  
 -qemu-system-x86_64 -drive format=raw,file=bootloader.bin  
+
